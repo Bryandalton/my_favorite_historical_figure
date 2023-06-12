@@ -1,3 +1,4 @@
+import { useState } from "react";
 import styled from "styled-components";
 
 const ProfileFrame = styled.div`
@@ -5,17 +6,19 @@ const ProfileFrame = styled.div`
   flex: 1;
 `;
 
-export default function Profile() {
+export default function Profile({wiki}) {
+  const [isOpen, setIsOpen] = useState(false)
+  const handleToggle= () => {
+    setIsOpen(!isOpen)
+  }
+
   return (
     <ProfileFrame>
+    <button onClick={handleToggle}>{isOpen ? '<' : '>'}</button>
       <iframe
         width="100%"
         height="100%"
-        frameborder="0"
-        scrolling="no"
-        marginheight="0"
-        marginwidth="0"
-        src="https://en.wikipedia.org/wiki/Benjamin_Franklin"
+        src={wiki}
         />
     </ProfileFrame>
   );
