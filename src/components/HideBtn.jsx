@@ -6,6 +6,8 @@ const HideBtnStyle = styled.button`
     color: white;
     font-weight: bold;
     font-size: 1.2rem;
+    position: relative;
+    /* left: 17.5rem; */
 `;
 
 export default function HideBtn({isOpen, setIsOpen}) {

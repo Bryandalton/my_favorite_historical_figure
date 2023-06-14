@@ -1,13 +1,13 @@
 import styled from "styled-components";
 
 const ProfileFrame = styled.div`
-  border: 1px solid blue;
+  /* border: 1px solid blue; */
   flex: 1;
 `;
 export default function Profile({ wiki }) {
   return (
     <ProfileFrame>
-      <iframe width="100%" height="100%" src={wiki} />
+      <iframe width="99%" height="99.5%" src={wiki} />
     </ProfileFrame>
   );
 }
