@@ -42,6 +42,7 @@ const PortraitGrid = styled.section`
   gap: 2rem;
   align-items: center;
   justify-content: center;
+  padding-top: 2rem;
   overflow-y: auto;
 
   @media (max-width: 1350px) {

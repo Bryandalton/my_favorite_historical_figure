@@ -12,12 +12,19 @@ const Portrait = styled.button`
   background-color: transparent;
 
   img {
-    width: clamp(50%, 100%, 100%);
-    border-radius: .5rem;
+    width: clamp(70%, 100%, 100%);
+    height: 200px;
+    object-fit:cover;
+    border-radius: 2rem;
   }
+
+  /* .backgroundPortrait {
+    background-image: url({img}) 
+  } */
 
   :hover{
     cursor: pointer;
+    box-shadow: inset white 1px 1px 10px 4px
   }
 `;
 
