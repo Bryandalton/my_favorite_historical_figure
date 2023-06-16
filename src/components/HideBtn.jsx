@@ -15,5 +15,5 @@ export default function HideBtn({isOpen, setIsOpen}) {
     setIsOpen(!isOpen);
   };
 
-  return <HideBtnStyle onClick={handleToggle}>{isOpen ? "<" : ">"}</HideBtnStyle>;
+  return <HideBtnStyle onClick={handleToggle}>{isOpen ? ">" : "<"}</HideBtnStyle>;
 }

@@ -17,7 +17,7 @@ const MainSection = styled.section`
   display: flex;
   flex-direction: column;
   text-align: center;
-  border: 1px solid white;
+  /* border: 1px solid white; */
   max-width: 100%;
   transition: max-width 1s;
 
@@ -34,7 +34,7 @@ const RightContent = styled.section`
   display: flex;
   flex-direction: column;
   text-align: center;
-  border: 1px solid white;
+  /* border: 1px solid white; */
 `;
 const PortraitGrid = styled.section`
   display: grid;
@@ -54,6 +54,12 @@ const PortraitGrid = styled.section`
 const HeadSpan = styled.span`
   display: flex;
   justify-content:center;
+  gap: 1rem;
+
+  &.closedHead{
+    position:relative;
+    left: 5rem;
+  }
 `;
 
 function App() {
@@ -66,7 +72,7 @@ function App() {
       <PageWrapper>
         <LeftContent>
           <MainSection className={isOpen && "closed"}>
-            <HeadSpan>
+            <HeadSpan className={isOpen && 'closedHead'}>
               Profile
               <HideBtn isOpen={isOpen} setIsOpen={setIsOpen} />
             </HeadSpan>
