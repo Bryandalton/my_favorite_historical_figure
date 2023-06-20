@@ -5,15 +5,15 @@ const MapFrame = styled.div`
   flex: 1;
 `;
 
-export default function Map({mapCoord}) {
+export default function Map({ mapCoord }) {
   return (
     <MapFrame>
-      <iframe
-        width="99%"
-        height="99.5%"
-        scrolling="no"
-        src= {mapCoord}
-      ></iframe>
+        <iframe
+          width="100%"
+          height="100%"
+          scrolling="no"
+          src={mapCoord}
+        />
     </MapFrame>
   );
 }
