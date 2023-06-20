@@ -1,5 +1,5 @@
 {
-  "name": "test_app",
+  "name": "favorite_historical_figures",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -7,14 +7,14 @@
     "dev": "vite",
     "build": "vite build",
     "lint": "eslint src --ext js,jsx --report-unused-disable-directives --max-warnings 0",
+    "deploy": "vite build && gh-pages -d dist",
     "preview": "vite preview"
   },
   "dependencies": {
     "gh-pages": "^5.0.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "styled-components": "^5.3.10",
-    "deploy": "vite build && gh-pages -d dist"
+    "styled-components": "^5.3.10"
   },
   "devDependencies": {
     "@types/react": "^18.0.37",
