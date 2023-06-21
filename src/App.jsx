@@ -11,6 +11,7 @@ const PageWrapper = styled.div`
   display: flex;
   position: absolute;
   inset: 0;
+  overflow-y: hidden; /*fixes a bug where a black section appears at the bottom of the page*/
 `;
 
 const ProfileSection = styled.section`
@@ -54,6 +55,7 @@ const PortraitGrid = styled.section`
 
   @media (max-width: 1350px) {
     display: flex;
+    justify-content: flex-start;
     flex-direction: column;
     gap: 1rem;
   }
