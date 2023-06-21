@@ -12,19 +12,26 @@ const PageWrapper = styled.div`
   position: absolute;
   inset: 0;
 `;
-const MainSection = styled.section`
+
+const ProfileSection = styled.section`
   flex: 1;
   display: flex;
   flex-direction: column;
   text-align: center;
-  /* border: 1px solid white; */
-  max-width: 100%;
-  transition: max-width 1s;
+  max-width: 50%;
+  transition: max-width .5s;
 
   &.closed {
     max-width: 0%;
   }
-`;
+`
+
+const MapSection = styled.section`
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+`
 const LeftContent = styled.section`
   display: flex;
   flex: 2;
@@ -71,18 +78,18 @@ function App() {
     <>
       <PageWrapper>
         <LeftContent>
-          <MainSection className={isOpen && "closed"}>
+          <ProfileSection className={isOpen && "closed"}>
             <HeadSpan className={isOpen && 'closedHead'}>
               Profile
               <HideBtn isOpen={isOpen} setIsOpen={setIsOpen} />
             </HeadSpan>
 
             <Profile wiki={currentFigure.wiki} />
-          </MainSection>
-          <MainSection>
+          </ProfileSection>
+          <MapSection>
             <HeadSpan>Location</HeadSpan>
             <Map mapCoord={currentFigure.mapCoord} />
-          </MainSection>
+          </MapSection>
         </LeftContent>
         <RightContent>
           <HeadSpan>Portraits</HeadSpan>
