@@ -44,3 +44,42 @@ const figures = [
 ];
 
 export default figures;
+
+// const battles = [
+//   {
+//     name: "",
+//     wiki: "",
+//     mapCoord: "",
+//     img: "",
+//   },
+//   {
+//     name: "",
+//     wiki: "",
+//     mapCoord: "",
+//     img: "",
+//   },
+//   {
+//     name: "",
+//     wiki: "",
+//     mapCoord: "",
+//     img: "",
+//   },
+//   {
+//     name: "",
+//     wiki: "",
+//     mapCoord: "",
+//     img: "",
+//   },
+//   {
+//     name: "",
+//     wiki: "",
+//     mapCoord: "",
+//     img: "",
+//   },
+//   {
+//     name: "",
+//     wiki: "",
+//     mapCoord: "",
+//     img: "",
+//   },
+// ];

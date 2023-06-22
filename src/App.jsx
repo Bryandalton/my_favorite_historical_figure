@@ -6,6 +6,7 @@ import Map from "./components/Map";
 import Profile from "./components/Profile";
 import figures from "./assets/data";
 import HideBtn from "./components/HideBtn";
+import BattleToggle from "./components/BattleFigureToggle";
 
 const PageWrapper = styled.div`
   display: flex;
@@ -95,6 +96,7 @@ function App() {
         </LeftContent>
         <RightContent>
           <HeadSpan>Portraits</HeadSpan>
+          <BattleToggle/>
           <PortraitGrid>
             {figures.map((figure, idx) => {
               return (
