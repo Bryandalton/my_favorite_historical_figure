@@ -1,4 +1,4 @@
-const figures = [
+export const figures = [
   {
     name: "Benjamin Franklin",
     wiki: "https://en.wikipedia.org/wiki/Benjamin_Franklin",
@@ -43,43 +43,42 @@ const figures = [
   },
 ];
 
-export default figures;
+export const battles = [
+  {
+    name: "",
+    wiki: "",
+    mapCoord: "",
+    img: "",
+  },
+  {
+    name: "",
+    wiki: "",
+    mapCoord: "",
+    img: "",
+  },
+  {
+    name: "",
+    wiki: "",
+    mapCoord: "",
+    img: "",
+  },
+  {
+    name: "",
+    wiki: "",
+    mapCoord: "",
+    img: "",
+  },
+  {
+    name: "",
+    wiki: "",
+    mapCoord: "",
+    img: "",
+  },
+  {
+    name: "",
+    wiki: "",
+    mapCoord: "",
+    img: "",
+  },
+];
 
-// const battles = [
-//   {
-//     name: "",
-//     wiki: "",
-//     mapCoord: "",
-//     img: "",
-//   },
-//   {
-//     name: "",
-//     wiki: "",
-//     mapCoord: "",
-//     img: "",
-//   },
-//   {
-//     name: "",
-//     wiki: "",
-//     mapCoord: "",
-//     img: "",
-//   },
-//   {
-//     name: "",
-//     wiki: "",
-//     mapCoord: "",
-//     img: "",
-//   },
-//   {
-//     name: "",
-//     wiki: "",
-//     mapCoord: "",
-//     img: "",
-//   },
-//   {
-//     name: "",
-//     wiki: "",
-//     mapCoord: "",
-//     img: "",
-//   },
-// ];

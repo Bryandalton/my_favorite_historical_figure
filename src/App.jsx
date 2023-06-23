@@ -4,9 +4,11 @@ import "./App.css";
 import styled from "styled-components";
 import Map from "./components/Map";
 import Profile from "./components/Profile";
-import figures from "./assets/data";
+import { figures } from "./assets/data";
 import HideBtn from "./components/HideBtn";
 import BattleToggle from "./components/BattleFigureToggle";
+import { battles }  from "./assets/data";
+console.log(battles)
 
 const PageWrapper = styled.div`
   display: flex;
