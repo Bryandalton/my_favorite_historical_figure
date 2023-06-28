@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useContext } from "react";
 import PortraitCard from "./components/Portrait";
 import "./App.css";
 import styled from "styled-components";
@@ -7,8 +7,9 @@ import Profile from "./components/Profile";
 import { figures } from "./assets/data";
 import HideBtn from "./components/HideBtn";
 import BattleToggle from "./components/BattleFigureToggle";
-import { battles }  from "./assets/data";
-console.log(battles)
+import { battles } from "./assets/data";
+import { AppContext } from "./appcontext";
+console.log(battles);
 
 const PageWrapper = styled.div`
   display: flex;
@@ -23,19 +24,19 @@ const ProfileSection = styled.section`
   flex-direction: column;
   text-align: center;
   max-width: 50%;
-  transition: max-width .5s;
+  transition: max-width 0.5s;
 
   &.closed {
     max-width: 0%;
   }
-`
+`;
 
 const MapSection = styled.section`
   flex: 1;
   display: flex;
   flex-direction: column;
   text-align: center;
-`
+`;
 const LeftContent = styled.section`
   display: flex;
   flex: 2;
@@ -65,53 +66,68 @@ const PortraitGrid = styled.section`
 `;
 const HeadSpan = styled.span`
   display: flex;
-  justify-content:center;
+  justify-content: center;
   gap: 1rem;
 
-  &.closedHead{
-    position:relative;
+  &.closedHead {
+    position: relative;
     left: 5rem;
   }
 `;
 
 function App() {
-  const [curFigure, setFigure] = useState(0);
+  const [currentIdx, setCurrentIdx] = useState(0);
   const [isOpen, setIsOpen] = useState(false);
-  const currentFigure = figures[curFigure];
-
+  const { mode } = useContext(AppContext);
+  let current = null;
+  if (mode === "battle") {
+    current = battles[currentIdx];
+  } else {
+    current = figures[currentIdx];
+  }
+  function renderPortraits(list) {
+    return (
+      <>
+        {list.map((figure, idx) => {
+          return (
+            <PortraitCard
+              key={idx}
+              img={figure.img}
+              name={figure.name}
+              onClick={() => {
+                setCurrentIdx(idx);
+              }}
+            />
+          );
+        })}
+      </>
+    );
+  }
+ console.log(mode)
   return (
     <>
       <PageWrapper>
         <LeftContent>
           <ProfileSection className={isOpen && "closed"}>
-            <HeadSpan className={isOpen && 'closedHead'}>
+            <HeadSpan className={isOpen && "closedHead"}>
               Profile
               <HideBtn isOpen={isOpen} setIsOpen={setIsOpen} />
             </HeadSpan>
 
-            <Profile wiki={currentFigure.wiki} />
+            <Profile wiki={current.wiki} />
           </ProfileSection>
           <MapSection>
             <HeadSpan>Location</HeadSpan>
-            <Map mapCoord={currentFigure.mapCoord} />
+            <Map mapCoord={current.mapCoord} />
           </MapSection>
         </LeftContent>
         <RightContent>
           <HeadSpan>Portraits</HeadSpan>
-          <BattleToggle/>
+          <BattleToggle />
           <PortraitGrid>
-            {figures.map((figure, idx) => {
-              return (
-                <PortraitCard
-                  key={idx}
-                  img={figure.img}
-                  name={figure.name}
-                  onClick={() => {
-                    setFigure(idx);
-                  }}
-                />
-              );
-            })}
+
+          {mode === 'figure' ? renderPortraits(figures) : renderPortraits(battles)}
+
           </PortraitGrid>
         </RightContent>
       </PageWrapper>

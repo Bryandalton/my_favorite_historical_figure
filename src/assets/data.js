@@ -45,10 +45,11 @@ export const figures = [
 
 export const battles = [
   {
-    name: "",
-    wiki: "",
-    mapCoord: "",
-    img: "",
+    name: "Battle of Hastings",
+    wiki: "https://en.wikipedia.org/wiki/Battle_of_Hastings",
+    mapCoord:
+      "https://www.openstreetmap.org/export/embed.html?bbox=-0.08803333792084089%2C50.66719050111075%2C1.058664660126034%2C51.10125016767875&amp;layer=mapnik",
+    img: "https://www.thehistoryproject.co.uk/images/ArtNEW/Battle_of_Hastings.jpg",
   },
   {
     name: "",
@@ -81,4 +82,3 @@ export const battles = [
     img: "",
   },
 ];
-
