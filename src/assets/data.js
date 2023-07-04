@@ -17,7 +17,7 @@ export const figures = [
     name: "Harold Hadrada",
     wiki: "https://en.wikipedia.org/wiki/Harald_Hardrada",
     mapCoord:
-      "https://www.openstreetmap.org/export/embed.html?bbox=-0.9107065200805665%2C53.98546804552404%2C-0.8965444564819337%2C53.99178863565013&amp;layer=mapnik",
+      "https://www.openstreetmap.org/export/embed.html?bbox=-0.9365844726562501%2C53.9764586005708%2C-0.8799362182617188%2C54.001740674034785&amp;layer=mapnik ",
     img: "https://upload.wikimedia.org/wikipedia/commons/thumb/2/25/Harald_Hardrada_window_in_Kirkwall_Cathedral_geograph_2068881.jpg/1920px-Harald_Hardrada_window_in_Kirkwall_Cathedral_geograph_2068881.jpg",
   },
   {
@@ -45,40 +45,40 @@ export const figures = [
 
 export const battles = [
   {
-    name: "",
-    wiki: "",
-    mapCoord: "",
-    img: "",
+    name: "Battle of Hastings",
+    wiki: "https://en.wikipedia.org/wiki/Battle_of_Hastings",
+    mapCoord:
+      "https://www.openstreetmap.org/export/embed.html?bbox=-0.08803333792084089%2C50.66719050111075%2C1.058664660126034%2C51.10125016767875&amp;layer=mapnik",
+    img: "https://www.thehistoryproject.co.uk/images/ArtNEW/Battle_of_Hastings.jpg",
   },
   {
-    name: "",
-    wiki: "",
-    mapCoord: "",
-    img: "",
+    name: "Thermopylae",
+    wiki: "https://en.wikipedia.org/wiki/Battle_of_Thermopylae",
+    mapCoord: "https://www.openstreetmap.org/export/embed.html?bbox=22.426185607910156%2C38.72609929999977%2C22.652778625488285%2C38.86016194351498&amp;layer=mapnik",
+    img: "https://static.nationalgeographic.co.uk/files/styles/image_3200/public/rsthermopylae9.jpg?w=1900&h=942",
   },
   {
-    name: "",
-    wiki: "",
-    mapCoord: "",
-    img: "",
+    name: "Battle of Vienna",
+    wiki: "https://en.wikipedia.org/wiki/Battle_of_Vienna",
+    mapCoord: "https://www.openstreetmap.org/export/embed.html?bbox=16.152648925781254%2C48.09734324406965%2C16.605834960937504%2C48.32658259315046&amp;layer=mapnik",
+    img: "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Anonym_Entsatz_Wien_1683.jpg/1920px-Anonym_Entsatz_Wien_1683.jpg",
   },
   {
-    name: "",
-    wiki: "",
-    mapCoord: "",
-    img: "",
+    name: "Stamford Bridge",
+    wiki: "https://en.wikipedia.org/wiki/Battle_of_Stamford_Bridge",
+    mapCoord: "https://www.openstreetmap.org/export/embed.html?bbox=-0.9365844726562501%2C53.9764586005708%2C-0.8799362182617188%2C54.001740674034785&amp;layer=mapnik",
+    img: "https://www.historic-uk.com/wp-content/uploads/2017/06/battle-of-stamford-bridge.jpg",
   },
   {
-    name: "",
-    wiki: "",
-    mapCoord: "",
-    img: "",
+    name: "Sekigahara",
+    wiki: "https://en.wikipedia.org/wiki/Battle_of_Sekigahara",
+    mapCoord: "https://www.openstreetmap.org/export/embed.html?bbox=135.54656982421878%2C34.098159345215535%2C137.49114990234378%2C36.31512514748051&amp;layer=mapnik",
+    img: "https://cdn.visitgifu.com/wp/2021/03/bcaf1bf5-sekigaharaenglish3.jpg",
   },
   {
-    name: "",
-    wiki: "",
-    mapCoord: "",
-    img: "",
+    name: "Siege of Antioch",
+    wiki: "https://en.wikipedia.org/wiki/Siege_of_Antioch",
+    mapCoord: "https://www.openstreetmap.org/export/embed.html?bbox=35.87104797363282%2C36.0721348028028%2C36.44439697265626%2C36.349697458498966&amp;layer=mapnik",
+    img: "https://www.sciencesource.com/pix/180/1805298-first-crusade-siege-of-antioch-1098.jpg",
   },
 ];
-

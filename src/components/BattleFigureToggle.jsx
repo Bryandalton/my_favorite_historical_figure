@@ -1,4 +1,5 @@
-import { useState } from "react";
+import { useState, useContext } from "react";
+import { AppContext } from "../appcontext";
 import styled from "styled-components";
 
 const BattleBtnStyle = styled.button`
@@ -26,12 +27,13 @@ const FiguresBtnStyle = styled.button`
 `;
 
 export default function BattleToggle() {
-const [isBattle, setIsBattle] = useState(false)
+const { mode, setMode } = useContext(AppContext);
+console.log(mode)
 
   const handleToggle = () => {
-    setIsBattle(!isBattle);
+    setMode(mode === 'battle' ? 'figure' : 'battle')
   };
-
+  const isBattle = mode === 'battle'
   return (
     <div>
       <BattleBtnStyle
