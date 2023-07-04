@@ -73,12 +73,12 @@ export const battles = [
     name: "Sekigahara",
     wiki: "https://en.wikipedia.org/wiki/Battle_of_Sekigahara",
     mapCoord: "https://www.openstreetmap.org/export/embed.html?bbox=135.54656982421878%2C34.098159345215535%2C137.49114990234378%2C36.31512514748051&amp;layer=mapnik",
-    img: "https://static.wikia.nocookie.net/vagabond/images/9/9e/Age_of_batlle_Shogun_The_Battle_at_Sekigahara.jpg/revision/latest?cb=20120504061354",
+    img: "https://cdn.visitgifu.com/wp/2021/03/bcaf1bf5-sekigaharaenglish3.jpg",
   },
   {
     name: "Siege of Antioch",
     wiki: "https://en.wikipedia.org/wiki/Siege_of_Antioch",
     mapCoord: "https://www.openstreetmap.org/export/embed.html?bbox=35.87104797363282%2C36.0721348028028%2C36.44439697265626%2C36.349697458498966&amp;layer=mapnik",
-    img: "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d3/SiegeofAntioch.jpeg/1280px-SiegeofAntioch.jpeg",
+    img: "https://www.sciencesource.com/pix/180/1805298-first-crusade-siege-of-antioch-1098.jpg",
   },
 ];
