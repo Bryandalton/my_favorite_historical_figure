@@ -9,7 +9,7 @@ import HideBtn from "./components/HideBtn";
 import BattleToggle from "./components/BattleFigureToggle";
 import { battles } from "./assets/data";
 import { AppContext } from "./appcontext";
-console.log(battles);
+// console.log(battles);
 
 const PageWrapper = styled.div`
   display: flex;
